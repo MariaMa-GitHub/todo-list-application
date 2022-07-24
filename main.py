@@ -1,6 +1,6 @@
-# # # # # # # # # # # # # #
-# To-Do List App by Maria #
-# # # # # # # # # # # # # #
+# # # # # # # # # # # #
+# To-Do List by Maria #
+# # # # # # # # # # # #
 
 import sqlite3
 from tkinter import *
