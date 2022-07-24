@@ -138,7 +138,7 @@ class ScrollFrame(Frame):
             Task(self.frame, id, name, description, color, status)
 
     # Scroll Region
-    def scroll_region(self):
+    def scroll_region(self, event):
         self.canvas.configure(scrollregion=self.canvas.bbox("all"))
 
     # Auto Resize
@@ -147,11 +147,11 @@ class ScrollFrame(Frame):
         self.canvas.itemconfig(self.canvas_frame, width=canvas_width)
 
     # Enable Scroll
-    def scrollable(self):
+    def scrollable(self, event):
         self.bind_all('<MouseWheel>', self.scroll)
 
     # Unable Scroll
-    def not_scrollable(self):
+    def not_scrollable(self, event):
         self.unbind_all('<MouseWheel>')
 
     # Scroll Settings
